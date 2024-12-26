@@ -18,8 +18,8 @@ public class GuessTheNumber {
 
         for (int round = 1; round <= rounds; round++) {
             System.out.println("Round " + round + " of " + rounds);
-            int randomNumber = random.nextInt(100) + 1; // Generate a random number between 1 and 100
-            int attempts = 5; // Number of attempts for each round
+            int randomNumber = random.nextInt(100) + 1; 
+            int attempts = 5; 
             int score = 0;
             boolean guessedCorrectly = false;
 
@@ -31,7 +31,7 @@ public class GuessTheNumber {
                 if (userGuess == randomNumber) {
                     System.out.println("Congratulations! You guessed the correct number.");
                     guessedCorrectly = true;
-                    score = (attempts - attempt + 1) * 10; // Points decrease with each attempt
+                    score = (attempts - attempt + 1) * 10; 
                     totalScore += score;
                     System.out.println("You earned " + score + " points this round.");
                     break;
